@@ -1,6 +1,6 @@
 <script lang="ts">
   import Versions from './components/Versions.svelte'
-  import CustomTitlebar from '../components/CustomTitlebar.svelte'
+  import CustomTitlebar from './components/CustomTitlebar.svelte'
   import { electron, api, debugLog } from '../utils/electronUtils'
   import electronLogo from './assets/electron.svg'
 
