@@ -10,6 +10,7 @@ import icon from '../../resources/icon.png?asset'
  * @param height 창 높이 (기본값: 600)
  * @returns 생성된 BrowserWindow 객체
  */
+
 export default function createModal(route: string, width = 800, height = 600): BrowserWindow {
   try {
     // 슬래시 제거하여 경로명만 추출
