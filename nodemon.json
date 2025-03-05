@@ -1,0 +1,8 @@
+{
+  "watch": ["src/main"],
+  "ext": "ts,js",
+  "ignore": ["node_modules", ".git", "out", "dist"],
+  "exec": "electron-vite dev",
+  "delay": "1000",
+  "verbose": true
+}

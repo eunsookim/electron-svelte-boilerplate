@@ -1,0 +1,24 @@
+{
+  "extends": "@electron-toolkit/tsconfig/tsconfig.web.json",
+  "include": [
+    "src/renderer/src/env.d.ts",
+    "src/renderer/src/**/*",
+    "src/renderer/src/**/*.svelte",
+    "src/renderer/types/**/*.d.ts",
+    "src/renderer/components/**/*.svelte",
+    "src/renderer/pages/**/*.svelte",
+    "src/renderer/pages/**/*.ts",
+    "src/preload/*.d.ts"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "moduleResolution": "bundler",
+    "verbatimModuleSyntax": true,
+    "useDefineForClassFields": true,
+    "strict": false,
+    "allowJs": true,
+    "checkJs": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "typeRoots": ["./node_modules/@types", "./src/renderer/types"]
+  }
+}
